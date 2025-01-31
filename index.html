@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1xp solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table style="width: 500px; border: 1xp solid black">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Tacos de fut</td>
+                <td>55.000</td>
+            </tr>
+            <tr>
+                <td>Texto largo para hacer pruebas</td>
+                <td>110.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 165.000</td>
+        </tfoot>
+    </table>
+
+    <!-- lista no ordenada -->
+    <ul>    
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+
+    <!-- lista ordenada -->
+    <ol>    
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ol>
+
+    <!-- lista ordenada -->
+    <ol>    
+        <li value="23">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" method="GET">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Junior"/> 
+        <input type="checkbox" id="nombre" name="nombre" placeholder="Junior"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Mora"/>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Ingrese comentario"></textarea>
+        <br>
+        <button type="button">Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    
+    </form>
+
+    <h1>Primer heading</h1>
+    <h3>Tercero heading</h3>
+    <h6>Sexto heading</h6>
+    <p>Estamos muy felices</p>
+    <hr> 
+    <p>Estamos muy felices</p>
+
+    <!-- COMENTARIOS -->
+
+    <p>Este texto es mas largo, <br> y es para mostrar la <span style="color:aquamarine">etiqueta span!</span></p>
+    <a href="http://www.google.com">Ir a google</a>
+    <hr>
+    <br>
+    <img src="img/barca.png" width="400"/>
+
+</body>
+</html>
