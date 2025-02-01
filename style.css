@@ -10,7 +10,7 @@ body, html {
     height: 50px;    
     padding: 20px;    
     color: #eaecee;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "JetBrains Mono", serif;
     display: flex;    
     align-items: center;    
 }
@@ -30,7 +30,7 @@ body, html {
 .name{    
   text-align: center;    
   font-size: 2vw; 
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: "JetBrains Mono", serif;
   margin-left: 80px;
   margin-right: 50px;
 }
@@ -51,11 +51,12 @@ body, html {
 }
 
 .body-intro {
+  background-image: url(fond.jpg);
   background-color: yellow;
   height: 420px;    
   padding: 15px;    
   color: #eaecee;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "JetBrains Mono", serif;
 }
 
 .body-intro-text {
@@ -70,7 +71,7 @@ body, html {
   height: 420px;    
   padding: 15px;    
   color: #eaecee;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: jetb;
 }
 
 .about-izquierda, .about-derecha {
