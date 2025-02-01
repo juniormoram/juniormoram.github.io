@@ -7,8 +7,8 @@ body, html {
 
 .header {
     background-color: #1b2631;
-    height: 50px;    
-    padding: 20px;    
+    height: auto;    
+    padding: 5px;    
     color: #eaecee;
     font-family: "JetBrains Mono", serif;
     display: flex;    
@@ -53,7 +53,7 @@ body, html {
 .body-intro {
   background-image: url(fond.jpg);
   background-color: yellow;
-  height: 420px;    
+  height: auto;   
   padding: 15px;    
   color: #eaecee;
   font-family: "JetBrains Mono", serif;
@@ -68,15 +68,57 @@ body, html {
   background-color: green;
   display: flex;
   flex-wrap: wrap;
-  height: 420px;    
+  height: auto;    
   padding: 15px;    
   color: #eaecee;
-  font-family: jetb;
+  font-family: "JetBrains Mono", serif;
 }
 
 .about-izquierda, .about-derecha {
   background-color: #3498db;
   color: white;
   padding: 10px;
-  width: 48%; 
+  width: 45%; 
+}
+
+.about-izquierda img, .about-derecha img {
+  width: 100%;
+  height: auto;    
+}
+
+.body-work {
+  background-color: red;
+  display: block;
+  height: auto;    
+  padding: 15px;
+}
+
+.work-izquierda{
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  width: 90%; 
+  height: 300px;
+}
+
+.work-derecha{
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  width: 90%; 
+  height: 300px;
+}
+
+.work-derecha img {
+  width: 35%;
+  height: auto; 
+  float: right;
+  padding: 50px;
+}
+
+.work-izquierda img {
+  width: 35%;
+  height: auto; 
+  float: left;
+  padding: 50px;
 }
