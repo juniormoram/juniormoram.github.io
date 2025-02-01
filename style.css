@@ -45,7 +45,17 @@ body, html {
     flex-direction: column; 
     height: auto;
   }
-  .item, .item-img, .name {
+
+  .name {
+    font-size: 4vw;  
+    margin: 2vw;
+    flex: 1 1 20px;
+  }
+
+  .item, .item-img {
+    display: none;
+  }
+/*   .item, .item-img, .name {
     font-size: 4vw;  
     margin: 2vw;
     flex: 1 1 20px;
@@ -53,7 +63,7 @@ body, html {
 
   .item-img {
     padding-left: 0;
-  }
+  } */
 }
 
 .body-intro {
