@@ -1,100 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Mi primera web</title>
-    <style>
-        table, th, td {
-            border: 1xp solid black;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Junior Mora Code</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="header">            
+      <p class="name">Junior Mora<br> Code</p>      
+      <p class="item">Works</p>
+      <p class="item">Sobre mí</p>
+      <p class="item">Skills</p>
+      <a class="item-img" href="https://www.linkedin.com"><i class="fa-brands fa-linkedin" style="color: #f9f6f6;"></i></a>
+      <a class="item-img" href="https://www.linkedin.com"><i class="fa-brands fa-github" style="color: #f9f6f6;"></i></a>
+      <a class="item-img" href="https://www.linkedin.com"><i class="fa-brands fa-whatsapp" style="color: #f9f6f6;"></i></a>
+      <a class="item-img" href="https://www.linkedin.com"><i class="fa-regular fa-envelope" style="color: #f9f6f6;"></i></a>
+    </div>
 
-    <table style="width: 500px; border: 1xp solid black">
-        <thead>
-            <tr>
-                <th>Producto</th>
-                <th>Precio</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>beats</td>
-                <td>Gratis</td>
-            </tr>
-            <tr>
-                <td>Tacos de fut</td>
-                <td>55.000</td>
-            </tr>
-            <tr>
-                <td>Texto largo para hacer pruebas</td>
-                <td>110.000</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <td></td>
-            <td>Total: 165.000</td>
-        </tfoot>
-    </table>
+    <div class="body-intro">
+      <p class="body-intro-text">Junior Mora</p>
+      <p class="body-intro-text">Full Stack Developer || Ingeniero de Software</p>
+    </div>
 
-    <!-- lista no ordenada -->
-    <ul>    
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ul>
-
-    <!-- lista ordenada -->
-    <ol>    
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-    </ol>
-
-    <!-- lista ordenada -->
-    <ol>    
-        <li value="23">Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>
-            <ol>
-                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
-                <li style="list-style-type: lower-alpha;">sub elemento 2</li>
-                <li style="list-style-type: lower-alpha;">sub elemento 3</li>
-            </ol>
-        </li>
-    </ol>
-
-    <form action="/formulario" method="GET">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Junior"/> 
-        <input type="checkbox" id="nombre" name="nombre" placeholder="Junior"/>
-        <br>
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Mora"/>
-        <br>
-        <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Ingrese comentario"></textarea>
-        <br>
-        <button type="button">Tipo boton</button>
-        <button type="reset">Tipo reset</button>
-        <button type="submit">Tipo submit</button>
-    
-    </form>
-
-    <h1>Primer heading</h1>
-    <h3>Tercero heading</h3>
-    <h6>Sexto heading</h6>
-    <p>Estamos muy felices</p>
-    <hr> 
-    <p>Estamos muy felices</p>
-
-    <!-- COMENTARIOS -->
-
-    <p>Este texto es mas largo, <br> y es para mostrar la <span style="color:aquamarine">etiqueta span!</span></p>
-    <a href="http://www.google.com">Ir a google</a>
-    <hr>
-    <br>
-    <img src="img/barca.png" width="400"/>
-
-</body>
+    <div class="body-about">
+      <div class="about-izquierda"></div>
+      <div class="about-derecha"></div>
+    </div>
+  </body>
 </html>
