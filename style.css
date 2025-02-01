@@ -86,6 +86,33 @@ body, html {
   height: auto;    
 }
 
+.body-skills {  
+  background-color: yellow;
+  height: 200px;    
+  padding: 5px;    
+  color: #eaecee;
+  font-family: "JetBrains Mono", serif;
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-items {    
+  margin: 10px;
+  font-size: 2vw;
+  min-width: 60px;
+}
+
+@media (max-width: 600px) {
+  .body-skills {    
+    height: auto;
+  }
+  .skills-items {
+    font-size: 5vw;  
+    margin: 10px;
+  }
+}
+
 .body-work {
   background-color: red;
   display: block;
@@ -113,12 +140,12 @@ body, html {
   width: 35%;
   height: auto; 
   float: right;
-  padding: 50px;
+  padding: 40px;
 }
 
 .work-izquierda img {
   width: 35%;
   height: auto; 
   float: left;
-  padding: 50px;
+  padding: 40px;
 }
