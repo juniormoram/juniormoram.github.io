@@ -40,7 +40,7 @@ body, html {
   margin-right: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .header {
     flex-direction: column; 
     height: auto;
@@ -67,7 +67,7 @@ body, html {
 }
 
 .body-intro {
-  background-image: url('Intro.jpg');
+  background-image: url('/img/Intro.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -193,12 +193,20 @@ body, html {
 }
 
 @media (max-width: 700px) {
-  .footer {    
+  .footer {   
+    display: flex;
+    justify-content: center; 
     height: auto;
+    flex-wrap: wrap;
   }
-  .footer-img, .footer-text {
+  .footer-img{
+    font-size: 4vw;  
+    margin: 10px;    
+  }
+  .footer-text {
     font-size: 3vw;  
-    margin: 10px;
+    margin: 10px;    
   }
+  
 }
 
