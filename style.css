@@ -98,7 +98,7 @@ span{
         opacity:1; 
   }
   100%{
-    transform:scale(1) translateX(-44000%) rotate(360deg);
+    transform:scale(1) translateX(44000%) rotate(360deg);
         opacity:0; 
   }
 }
@@ -112,9 +112,10 @@ span{
 .body-intro-text {
   text-align: right;
   padding-right: 100px;
-  padding-top: 50px;
+  padding-top: 100px;
   color: white;
   font-family: "JetBrains Mono", serif;
+  font-size: xx-large;
 }
 
 .body-about {
