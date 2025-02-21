@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  box-shadow:border-box;
 }
 
 body, html {
-  height: 100%;    
+  height: 100%;  
+  width:100%;
+  background:#000;  
+  
 }
 
 .header {
@@ -16,7 +20,7 @@ body, html {
     font-family: "JetBrains Mono", serif;
     display: flex;    
     align-items: center;    
-    justify-content: space-between;    
+    justify-content: space-between;  
 }
 
 .item {  
@@ -55,7 +59,7 @@ body, html {
   .item, .item-img {
     display: none;
   }
-/*   .item, .item-img, .name {
+  /*   .item, .item-img, .name {
     font-size: 4vw;  
     margin: 2vw;
     flex: 1 1 20px;
@@ -66,11 +70,37 @@ body, html {
   } */
 }
 
-.body-intro {
-  background-image: url('/img/Intro.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+section{    
+    height:100%;
+    width:100%;
+}
+
+span{
+  border-radius:50%;
+  pointer-events:none;
+  position:absolute;
+  background:white;
+  animation: animate 7s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+    transform:scale(0) translateX(0) rotate(0deg);
+    opacity:0;
+  }
+  10%{
+        opacity:1; 
+  }
+  90%{
+        opacity:1; 
+  }
+  100%{
+    transform:scale(1) translateX(-44000%) rotate(360deg);
+        opacity:0; 
+  }
+}
+
+.body-intro {    
   width: 100%;
   height: 100vh;  
   filter: grayscale(100%);  
@@ -80,7 +110,7 @@ body, html {
   text-align: right;
   padding-right: 100px;
   padding-top: 50px;
-  color: black;
+  color: white;
   font-family: "JetBrains Mono", serif;
 }
 
