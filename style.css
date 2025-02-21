@@ -83,7 +83,7 @@ span{
   pointer-events:none;
   position:absolute;
   background:white;
-  animation: animate 7s linear infinite;
+  animation: animate 5s linear infinite;
 }
 
 @keyframes animate{
@@ -116,6 +116,19 @@ span{
   color: white;
   font-family: "JetBrains Mono", serif;
   font-size: xx-large;
+}
+
+@media (max-width: 700px) {
+  .body-intro-text {
+    text-align: center;
+    color: white;
+    font-family: "JetBrains Mono", serif;
+    font-size: large;
+    font-size: 4vw;  
+    margin: 2vw;
+    flex: 1 1 20px;
+    flex-direction: column;
+}
 }
 
 .body-about {
