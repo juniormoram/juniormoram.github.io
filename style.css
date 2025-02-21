@@ -120,14 +120,10 @@ span{
 
 @media (max-width: 700px) {
   .body-intro-text {
-    text-align: center;
+    text-align: right;
     color: white;
     font-family: "JetBrains Mono", serif;
-    font-size: large;
-    font-size: 4vw;  
-    margin: 2vw;
-    flex: 1 1 20px;
-    flex-direction: column;
+    font-size: xx-large;
 }
 }
 
