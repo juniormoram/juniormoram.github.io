@@ -72,7 +72,7 @@ html {
 }
 
 section {
-  height: 85%;
+  height: 87%;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -111,8 +111,7 @@ span {
 }
 
 .body-intro-text {
-  text-align: right;
-  padding-right: 100px;
+  text-align: center;
   padding-top: 100px;
   color: white;
   font-family: "JetBrains Mono", serif;
@@ -121,7 +120,7 @@ span {
 
 @media (max-width: 700px) {
   .body-intro-text {
-    text-align: right;
+    text-align: center;
     color: white;
     font-family: "JetBrains Mono", serif;
     font-size: xx-large;
@@ -129,28 +128,51 @@ span {
 }
 
 .body-about {
-  background-color: green;
-  display: flex;
+  background-color: black;
+  display: inline-flex;
   flex-wrap: wrap;
   height: auto;
   padding: 0;
-  color: #eaecee;
   font-family: "JetBrains Mono", serif;
   justify-content: center;
+  width: 100%;
 }
 
-.about-izquierda,
-.about-derecha {
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
-  width: 45%;
+.about-section {
+  background-color: black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 
-.about-izquierda img,
-.about-derecha img {
+.about-section img {
   width: 100%;
   height: auto;
+}
+
+.about-text {
+  text-align: center;
+  color: white;
+  font-family: "JetBrains Mono", serif;
+  font-size: x-large;
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
+
+@media (max-width: 700px) {
+  .body-about {
+    background-color: black;
+    display: inline;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0;
+    font-family: "JetBrains Mono", serif;
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 .body-skills {
