@@ -10,6 +10,13 @@ html {
   height: 100%;
   width: 100%;
   background: #000;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
 }
 
 .header {
@@ -111,8 +118,9 @@ span {
 }
 
 .body-intro-text {
-  text-align: center;
+  text-align: right;
   padding-top: 100px;
+  padding-right: 100px;
   color: white;
   font-family: "JetBrains Mono", serif;
   font-size: xx-large;
@@ -124,7 +132,17 @@ span {
     color: white;
     font-family: "JetBrains Mono", serif;
     font-size: xx-large;
+    padding-right: 0;
   }
+}
+
+.body-title {
+  text-align: center;
+  color: white;
+  font-family: "JetBrains Mono", serif;
+  font-size: xx-large;
+  font-style: italic;
+  padding-top: 30px;
 }
 
 .body-about {
@@ -152,6 +170,13 @@ span {
   height: auto;
 }
 
+.about-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-text {
   text-align: center;
   color: white;
@@ -176,8 +201,8 @@ span {
 }
 
 .body-skills {
-  background-color: yellow;
-  height: 200px;
+  background-color: black;
+  height: 100px;
   padding: 5px;
   color: #eaecee;
   font-family: "JetBrains Mono", serif;
