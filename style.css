@@ -220,12 +220,16 @@ span {
 @media (max-width: 600px) {
   .body-skills {
     height: auto;
-    display: inline;
     flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
   }
   .skills-items {
-    font-size: 5vw;
-    margin: 80px;
+    font-size: 8vw;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
