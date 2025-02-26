@@ -202,7 +202,7 @@ span {
 
 .body-skills {
   background-color: black;
-  height: 100px;
+  height: 150px;
   padding: 5px;
   color: #eaecee;
   font-family: "JetBrains Mono", serif;
@@ -259,39 +259,53 @@ span {
 }
 
 .body-work {
-  background-color: red;
+  background-color: black;
   display: block;
   height: auto;
   padding: 0px;
   justify-content: center;
 }
 
-.work-izquierda {
-  background-color: #3498db;
+.work-text {
+  text-align: center;
   color: white;
-  padding: 10px;
-  height: 300px;
+  font-family: "JetBrains Mono", serif;
+  font-size: large;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.work-izquierda {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  height: 83vh;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .work-derecha {
-  background-color: #3498db;
+  background-color: black;
   color: white;
-  padding: 10px;
-  height: 300px;
+  padding: 30px;
+  height: 83vh;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .work-derecha img {
-  width: 50%;
+  width: 45%;
   height: auto;
   float: right;
-  padding-right: 20%;
+  padding-right: 8%;
 }
 
 .work-izquierda img {
-  width: 50%;
+  width: 45%;
   height: auto;
   float: left;
-  padding-left: 20%;
+  padding-left: 8%;
 }
 
 .footer {
