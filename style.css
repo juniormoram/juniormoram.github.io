@@ -184,7 +184,7 @@ span {
   font-size: x-large;
   width: 100%;
   height: auto;
-  padding: 50px;
+  padding: 40px;
 }
 
 @media (max-width: 700px) {
@@ -212,9 +212,22 @@ span {
 }
 
 .skills-items {
+  padding-top: 15px;
   margin: 10px;
-  font-size: 3vw;
+  font-size: 4vw;
   min-width: 60px;
+}
+
+.skills-text {
+  text-align: center;
+  color: white;
+  font-family: "JetBrains Mono", serif;
+  font-size: x-large;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 @media (max-width: 600px) {
@@ -230,6 +243,18 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .skills-text {
+    text-align: center;
+    color: white;
+    font-family: "JetBrains Mono", serif;
+    font-size: x-large;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
