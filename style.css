@@ -46,9 +46,12 @@ a {
 .name {
   text-align: left;
   font-size: 2vw;
+  color: #eaecee;
   font-family: "JetBrains Mono", serif;
   margin-left: 80px;
   margin-right: 50px;
+  text-shadow: 0 0 5px #b497bd, 0 0 10px #b497bd, 0 0 20px #b497bd,
+    0 0 40px #b497bd;
 }
 
 @media (max-width: 700px) {
@@ -127,13 +130,14 @@ span {
   font-size: xx-large;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
   .body-intro-text {
     text-align: center;
     color: white;
     font-family: "JetBrains Mono", serif;
     font-size: xx-large;
-    padding-right: 0;
+    padding: 30px;
+    padding-top: 100px;
   }
 }
 
@@ -188,7 +192,7 @@ span {
   padding: 40px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
   .body-about {
     background-color: black;
     display: inline;
@@ -231,7 +235,7 @@ span {
   padding-right: 100px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .body-skills {
     height: auto;
     flex-wrap: wrap;
@@ -280,7 +284,7 @@ span {
 .work-izquierda {
   background-color: black;
   color: white;
-  padding: 30px;
+  padding: 10px;
   height: 83vh;
   flex-wrap: wrap;
   flex-direction: row;
@@ -289,24 +293,76 @@ span {
 .work-derecha {
   background-color: black;
   color: white;
-  padding: 30px;
+  padding: 10px;
   height: 83vh;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
 .work-derecha img {
-  width: 45%;
+  width: 50%;
   height: auto;
   float: right;
-  padding-right: 8%;
+  padding-right: 5%;
 }
 
 .work-izquierda img {
-  width: 45%;
+  width: 50%;
   height: auto;
   float: left;
-  padding-left: 8%;
+  padding-left: 5%;
+}
+
+@media (max-width: 900px) {
+  .body-work {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0px;
+  }
+
+  .work-izquierda {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .work-derecha {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .work-derecha img {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    height: auto;
+    padding: 0;
+  }
+
+  .work-izquierda img {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    height: auto;
+    padding: 0;
+  }
 }
 
 .footer {
