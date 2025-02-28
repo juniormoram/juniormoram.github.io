@@ -17,6 +17,26 @@ a {
   text-decoration: none;
   font-family: inherit;
   color: inherit;
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: white;
+  bottom: -5px;
+  left: 35%;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 .header {
@@ -50,8 +70,8 @@ a {
   font-family: "JetBrains Mono", serif;
   margin-left: 80px;
   margin-right: 50px;
-  text-shadow: 0 0 5px #b497bd, 0 0 10px #b497bd, 0 0 20px #b497bd,
-    0 0 40px #b497bd;
+  text-shadow: 0 0 5px #5138be, 0 0 10px #5138be, 0 0 20px #5138be,
+    0 0 40px #5138be;
 }
 
 @media (max-width: 700px) {
@@ -89,6 +109,11 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 950px) {
+  section {
+    height: 73vh;
+  }
+}
 span {
   overflow: hidden;
   border-radius: 50%;
@@ -150,6 +175,54 @@ span {
   padding-top: 30px;
 }
 
+.underlined {
+  display: inline;
+  color: white;
+  flex: 5;
+  font-size: large;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: linear-gradient(to right, #5138be 0, #5138be 100%);
+  font-family: "JetBrains Mono", serif;
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.underlined:hover {
+  background-size: 100% 100%;
+}
+
+.underlined--thin {
+  background-image: linear-gradient(to right, #5138be 0, #5138be 100%);
+}
+
+.underlined--thick {
+  background-position: 0 -0.3em;
+}
+
+.underlined--offset {
+  background-position: 0 0.2em;
+  box-shadow: inset 0 -0.5em 0 0 black;
+  font-size: xx-large;
+}
+
+.underlined--gradient {
+  background-position: 0 -0.1em;
+  background-image: linear-gradient(
+    to right,
+    #5138be 0,
+    rgb(165, 13, 145) 100%
+  );
+}
+
+.underlined--reverse {
+  background-position: 100% -0.1em;
+  transition: 1s;
+  background-image: linear-gradient(to right, #5138be 0, #5138be 100%);
+}
+
 .body-about {
   background-color: black;
   display: inline-flex;
@@ -186,7 +259,7 @@ span {
   text-align: center;
   color: white;
   font-family: "JetBrains Mono", serif;
-  font-size: x-large;
+  font-size: large;
   width: 100%;
   height: auto;
   padding: 40px;
@@ -254,7 +327,7 @@ span {
     text-align: center;
     color: white;
     font-family: "JetBrains Mono", serif;
-    font-size: x-large;
+    font-size: large;
     width: 100%;
     height: auto;
     padding: 20px;
