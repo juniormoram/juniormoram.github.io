@@ -11,4 +11,4 @@ function createSquare() {
 
   section.appendChild(square);
 }
-setInterval(createSquare, 15);
+setInterval(createSquare, 150);
