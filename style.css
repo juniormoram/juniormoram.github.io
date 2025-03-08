@@ -70,8 +70,8 @@ a:hover::before {
   font-family: "JetBrains Mono", serif;
   margin-left: 80px;
   margin-right: 50px;
-  text-shadow: 0 0 5px #5138be, 0 0 10px #5138be, 0 0 20px #5138be,
-    0 0 40px #5138be;
+  text-shadow: 0 0 5px rgb(165, 13, 145), 0 0 10px rgb(165, 13, 145),
+    0 0 20px rgb(165, 13, 145), 0 0 40px rgb(165, 13, 145);
 }
 
 @media (max-width: 700px) {
@@ -173,9 +173,11 @@ span {
   font-size: xx-large;
   font-style: italic;
   padding-top: 30px;
-  background: linear-gradient(to right, #5138be 0, rgb(165, 13, 145) 80%);
+  background: linear-gradient(to right, #c850c0, #ff00ff, #00ffff);
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  display: block;
+  background-size: 100% 100%;
 }
 
 .underlined {
@@ -393,6 +395,13 @@ span {
   padding-right: 3%;
 }
 
+.works-items {
+  padding-top: 15px;
+  margin: 10px;
+  font-size: 3vw;
+  min-width: 60px;
+}
+
 @media (max-width: 750px) {
   .body-work {
     background-color: black;
@@ -444,6 +453,21 @@ span {
     width: 65%;
     height: auto;
     padding: 0;
+  }
+  .works-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .works-items {
+    font-size: 6vw;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
