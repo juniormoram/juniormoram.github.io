@@ -40,7 +40,7 @@ a:hover::before {
 }
 
 .header {
-  background-color: #1b2631;
+  background-color: black;
   height: auto;
   padding: 5px;
   color: #eaecee;
@@ -476,7 +476,7 @@ span {
   flex-direction: column;
   justify-content: center;
   height: auto;
-  background-color: #1b2631;
+  background-color: black;
   font-family: "JetBrains Mono", serif;
   padding: 18px;
   align-items: center;
