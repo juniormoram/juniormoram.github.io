@@ -498,7 +498,7 @@ span {
 
 @media (max-width: 1000px) {
   .footer-text {
-    font-size: 2vw;
+    font-size: large;
     margin-bottom: 15px;
   }
 
@@ -513,7 +513,7 @@ span {
 
 @media (max-width: 600px) {
   .footer-text {
-    font-size: 3vw;
+    font-size: large;
     margin-bottom: 10px;
   }
 
