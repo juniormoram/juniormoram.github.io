@@ -296,9 +296,15 @@ span {
 
 .skills-items {
   padding-top: 15px;
-  margin: 10px;
+  margin: 15px;
   font-size: 4vw;
   min-width: 60px;
+  transition: 1s;
+}
+
+.skills-items:hover {
+  transition: 1s;
+  font-size: 5.5vw;
 }
 
 .skills-text {
@@ -326,6 +332,12 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
+  }
+
+  .skills-items:hover {
+    transition: 1s;
+    font-size: 8vw;
   }
 
   .skills-text {
@@ -393,13 +405,25 @@ span {
   float: left;
   padding-left: 5%;
   padding-right: 3%;
+  transition: 1s;
+}
+
+.work-izquierda img:hover {
+  transition: 1s;
+  width: 53%;
 }
 
 .works-items {
   padding-top: 15px;
-  margin: 10px;
+  margin: 15px;
   font-size: 3vw;
   min-width: 60px;
+  transition: 1s;
+}
+
+.works-items:hover {
+  transition: 1s;
+  font-size: 4vw;
 }
 
 @media (max-width: 750px) {
@@ -469,6 +493,11 @@ span {
     justify-content: center;
     align-items: center;
   }
+
+  .works-items:hover {
+    transition: 1s;
+    font-size: 7vw;
+  }
 }
 
 .footer {
@@ -489,11 +518,21 @@ span {
   text-align: center;
 }
 
-.footer-img {
+.footer-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
   font-size: 2.2vw;
+  transition: 2s;
+}
+
+.footer-img {
+  transition: 1s;
+}
+
+.footer-img:hover {
+  transition: 1s;
+  font-size: 3.5vw;
 }
 
 @media (max-width: 1000px) {
@@ -504,10 +543,16 @@ span {
 
   .footer-img {
     font-size: 4vw;
+    transition: 1s;
   }
 
   .footer-img {
     gap: 25px;
+  }
+
+  .footer-img:hover {
+    transition: 1s;
+    font-size: 5vw;
   }
 }
 
@@ -519,9 +564,15 @@ span {
 
   .footer-img {
     font-size: 5vw;
+    transition: 1s;
   }
 
   .footer-img {
     gap: 18px;
+  }
+
+  .footer-img:hover {
+    transition: 1s;
+    font-size: 6vw;
   }
 }
