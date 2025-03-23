@@ -405,7 +405,6 @@ span {
   float: left;
   padding-left: 5%;
   padding-right: 3%;
-  border-radius: 100%;
 }
 
 .works-items {
@@ -421,7 +420,7 @@ span {
   font-size: 4vw;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .body-work {
     background-color: black;
     display: flex;
@@ -472,6 +471,7 @@ span {
     width: 50%;
     height: auto;
     padding: 0;
+    border-radius: 100%;
   }
   .works-container {
     display: flex;
