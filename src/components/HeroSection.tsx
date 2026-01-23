@@ -1,8 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
-
 const HeroSection = () => {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background glow effect */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse-glow" />
@@ -23,7 +21,7 @@ const HeroSection = () => {
           {/* Main heading */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 opacity-0 animate-slide-up delay-100">
             Junior{" "}
-            <span className="text-gradient">Mora</span>
+            <span className="text-gradient text-destructive">Mora</span>
           </h1>
 
           {/* Role tags */}
@@ -46,42 +44,24 @@ const HeroSection = () => {
 
           {/* Social links */}
           <div className="flex items-center justify-center gap-4 mb-16 opacity-0 animate-slide-up delay-400">
-            <a
-              href="mailto:contacto@juniormora.dev"
-              className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50"
-            >
+            <a href="mailto:contacto@juniormora.dev" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
               <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
-            <a
-              href="https://github.com/juniormoram"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50"
-            >
+            <a href="https://github.com/juniormoram" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
-            <a
-              href="https://linkedin.com/in/juniormora"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50"
-            >
+            <a href="https://linkedin.com/in/juniormora" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
           </div>
 
           {/* Scroll indicator */}
-          <a
-            href="#proyectos"
-            className="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors opacity-0 animate-slide-up delay-500"
-          >
+          <a href="#proyectos" className="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors opacity-0 animate-slide-up delay-500">
             <span className="text-sm font-medium">Explorar</span>
             <ArrowDown className="w-5 h-5 animate-bounce" />
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
