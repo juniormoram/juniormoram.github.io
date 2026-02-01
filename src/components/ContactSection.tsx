@@ -1,4 +1,4 @@
-import { ArrowUpRight, Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Mail, MessageCircleCode, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -24,7 +24,7 @@ const ContactSection = () => {
 
           {/* CTA Button */}
           <a
-            href="mailto:contacto@juniormora.dev"
+            href="mailto:juniormora558@gmail.com"
             className="group inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-primary text-primary-foreground font-semibold text-lg shadow-glow hover:shadow-[0_0_60px_hsl(175_80%_50%_/_0.3)] transition-all duration-300 hover:scale-105 mb-16"
           >
             <Mail className="w-5 h-5" />
@@ -44,13 +44,22 @@ const ContactSection = () => {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/juniormora"
+              href="https://linkedin.com/in/junior-mora-988317230"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-primary transition-colors link-underline"
             >
               <Linkedin className="w-5 h-5" />
               LinkedIn
+            </a>
+            <a
+              href="https://wa.me/50662415846"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-primary transition-colors link-underline"
+            >
+              <MessageCircleCode className="w-5 h-5" />
+              WhatsApp
             </a>
             <span className="flex items-center gap-2">
               <MapPin className="w-5 h-5" />

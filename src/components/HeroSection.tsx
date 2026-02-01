@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, MessageCircleCode } from "lucide-react";
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background glow effect */}
@@ -44,14 +44,17 @@ const HeroSection = () => {
 
           {/* Social links */}
           <div className="flex items-center justify-center gap-4 mb-16 opacity-0 animate-slide-up delay-400">
-            <a href="mailto:contacto@juniormora.dev" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
+            <a href="mailto:juniormora558@gmail.com" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
               <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
             <a href="https://github.com/juniormoram" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
               <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
-            <a href="https://linkedin.com/in/juniormora" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
+            <a href="https://linkedin.com/in/junior-mora-988317230" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
               <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
+            </a>
+            <a href="https://wa.me/50662415846" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center w-12 h-12 rounded-xl glass hover-glow transition-all duration-300 hover:border-primary/50">
+              <MessageCircleCode className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
             </a>
           </div>
 

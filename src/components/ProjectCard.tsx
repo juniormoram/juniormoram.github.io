@@ -4,9 +4,9 @@ interface ProjectCardProps {
   title: string;
   description: string;
   technologies: string[];
-  imageUrl?: string;
+  image?: string;
   githubUrl?: string;
-  liveUrl?: string;
+  siteUrl?: string;
   delay?: number;
 }
 
@@ -14,9 +14,9 @@ const ProjectCard = ({
   title,
   description,
   technologies,
-  imageUrl,
+  image,
   githubUrl,
-  liveUrl,
+  siteUrl,
   delay = 0,
 }: ProjectCardProps) => {
   return (
@@ -26,9 +26,9 @@ const ProjectCard = ({
     >
       {/* Image container */}
       <div className="relative h-52 overflow-hidden">
-        {imageUrl ? (
+        {image ? (
           <img
-            src={imageUrl}
+            src={image}
             alt={title}
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
@@ -52,9 +52,9 @@ const ProjectCard = ({
               <Github className="w-4 h-4" />
             </a>
           )}
-          {liveUrl && (
+          {siteUrl && (
             <a
-              href={liveUrl}
+              href={siteUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-10 h-10 rounded-lg bg-background/80 backdrop-blur-sm border border-border/50 text-foreground hover:text-primary hover:border-primary/50 transition-colors"

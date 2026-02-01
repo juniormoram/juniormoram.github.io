@@ -14,7 +14,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground flex items-center gap-1">
-            © {currentYear} Junior Mora. Hecho con{" "}
+            © {currentYear} Junior Mora. 
             <Heart className="w-4 h-4 text-primary fill-primary" />
           </p>
 
